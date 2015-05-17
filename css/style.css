@@ -25,17 +25,31 @@ header {
 }
 
 .toc { /*Div wrapping toc <p>s */
-
+text-align: right;
 }
 
 .tocLevelOne { /*Book-level toc nodes */
-
+  text-align: left;
 }
 
 .tocLevelTwo { /*Verse-level toc nodes */
   font-size: 12px;
 }
 
+
+
+#icon{
+  text-align: right;
+  width: 100%;
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+
+}
+
+.tocEmph {
+  font-weight: 400;
+/*  font-size: 40px;*/
+}
 header p { /*Page header*/
 
 }
