@@ -16,7 +16,7 @@ header {
 }
 
 .tocWrapper {  /*Wraps all toc elements*/
-  max-width: 420px;
+  max-width: 290px;
   display: inline-block;
   vertical-align: top;
   padding: 20px;
@@ -36,19 +36,36 @@ text-align: right;
   font-size: 12px;
 }
 
-
-
 #icon{
   text-align: right;
   width: 100%;
   margin-top: 0px; 
   margin-bottom: 0px; 
-
 }
 
 .tocEmph {
   font-weight: 400;
 /*  font-size: 40px;*/
+}
+
+.startPage {
+
+  max-width: 620px;
+  display:inline-block;
+  margin: 10px 10px 50px 10px;
+  background: rgba(133, 224, 224, 0.2);
+  height: 457px;
+}
+
+
+.startPage p {
+  padding: 20px;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  line-height: 300px;
+
 }
 
 header p { /*Page header*/
@@ -137,6 +154,4 @@ hr {
 
 }
 
-.labels {
 
-}
