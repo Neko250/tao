@@ -1,55 +1,71 @@
 body {
-
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
 }
 
 header {
-
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-weight: 300;
 }
 
-.container {
+.container {  /*Wraps all page content*/
   max-width: 960px;
   margin: 0 auto;
 }
 
-.tocWrapper {
+.tocWrapper {  /*Wraps all toc elements*/
   max-width: 420px;
   display: inline-block;
+  vertical-align: top;
+}
+
+.toc { /*Div wrapping toc <p>s */
 
 }
 
-.toc {
+.tocLevelOne { /*Book-level toc nodes */
 
 }
 
-.tocLevelOne {
+.tocLevelTwo { /*Verse-level toc nodes */
 
 }
 
-.tocLevelTwo {
+header p { /*Page header*/
 
 }
 
-header p {
+h1 { /*book number headings*/
+  text-align: center;
+  font-size: 16px;
+
+  
+}
+
+h2 { /*book title headings */
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 35px;
+  margin-top: 10px;
 
 }
 
-h1 {
+h3 { /*verse number headings */
 
 }
 
-h2 {
-
-}
-
-h3 {
-
-}
-
-p {
-
+p { /*standard paras */
+  line-height: 1.5em;
+  letter-spacing: 1px
+  weight: 300;
 }
 
 blockquote {
+  line-height: 2em;
+  font-style: italic;
+
 
 }
 
@@ -58,27 +74,44 @@ tt {
 }
 
 
-.theTao {
-  max-width: 420px;
+.theTao { /*Tao wrapper */
+  max-width: 620px;
   display: inline-block;
 
 }
 
-.book {
+.book { /*book wrapper*/
+  padding: 20px;
+  margin: 10px;
+  background: rgba(133, 224, 224, 0.2);
 
 }
 
-.spake {
+.spake { /*"This spake the master programmer:" p class" */
+  text-align: center;
+/*  font-style: italic;*/
+  font-size: 16px;
+  line-height: 5px;
+ 
+}
+
+.maxim { /*Verse maxim p class */
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
 
 }
 
-.maxim {
-  width: 100;
-  margin: 0 auto;
+.verse { /*Verse wrapper div */
+  margin: 30px 15px 15px 15px;
+
 
 }
 
-.verse {
+.verseNumber {
+  font-weight: 700;
+  letter-spacing: 2px;
 
 }
 
