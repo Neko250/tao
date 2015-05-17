@@ -11,7 +11,7 @@ header {
 }
 
 .container {  /*Wraps all page content*/
-  max-width: 960px;
+  max-width: 990px;
   margin: 0 auto;
 }
 
@@ -162,6 +162,12 @@ hr {
 .verseNumber {
   font-weight: 700;
   letter-spacing: 2px;
+
+}
+
+.theTao { /*Tao wrapper */
+  max-width: 620px;
+  display: inline-block;
 
 }
 

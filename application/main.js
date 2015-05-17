@@ -28,6 +28,16 @@ $(document).ready(function () {
     });
   });
 
+  $("header").on("click", function() {
+    $(".book").fadeOut(1000, function() {
+    });
+    $(".startPage").fadeIn(2000, function() {
+    });
+    $(".startPage").fadeOut(2000, function() {
+    });
+  });
+
+
 
   $("#iconPlus").on("click", function() {     //Menu expand on click
     $(".tocWrapper").stop().animate({
@@ -42,16 +52,19 @@ $(document).ready(function () {
 
   var getPage = function() {
 
-    // $(".startPage").stop().fadeOut(5000, function() {
-    // });
-    // $(".theTao").stop().fadeOut(5000, function(){
-    // });
     $(".tocLevelOne").on("click", function(){
+
+      $(".startPage").hide();
+      $(".book").hide();
       var x = $(this).attr('id');
       x = x.substring(3);
       x = x.toLowerCase();
-      $("#" + x).show();
-      console.log(x)
+      if (x === "all") {
+        $(".theTao").show();
+      } else {
+        $("#" + x).fadeIn(2000, function() {
+        });
+      }
     });
   };
 
