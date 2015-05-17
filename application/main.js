@@ -19,21 +19,25 @@ $(document).ready(function () {
     })
 
 
-  $("#iconMinus").on("click", function() {
+  $("#iconMinus").on("click", function() {    //Menu collapse on click
     $(".tocWrapper").stop().animate({
       width: "10px"
     }, 200, function() {
       $("#iconMinus").hide(); 
+      $(".tocLevelOne").hide();
+      $(".toc > hr").hide();
       $("#iconPlus").show();   
     });
   });
 
 
-  $("#iconPlus").on("click", function() {
+  $("#iconPlus").on("click", function() {     //Menu expand on click
     $(".tocWrapper").stop().animate({
-      width: "272px"
+      width: "280px"
     }, 200, function() {
       $("#iconPlus").hide(); 
+      $(".tocLevelOne").show();
+      $(".toc > hr").show();
       $("#iconMinus").show();   
     });
   });

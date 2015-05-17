@@ -45,7 +45,12 @@ text-align: right;
 
 .tocEmph {
   font-weight: 400;
-/*  font-size: 40px;*/
+}
+
+.mid {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .startPage {
@@ -113,6 +118,18 @@ hr {
     border-style: inset;
     border-width: 1px;
     width: 400px;
+}
+
+.toc hr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 200px;
+}
 }
 
 .theTao { /*Tao wrapper */
