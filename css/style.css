@@ -19,6 +19,9 @@ header {
   max-width: 420px;
   display: inline-block;
   vertical-align: top;
+  padding: 20px;
+  margin: 10px;
+  background: rgba(133, 224, 224, 0.2);
 }
 
 .toc { /*Div wrapping toc <p>s */
@@ -30,7 +33,7 @@ header {
 }
 
 .tocLevelTwo { /*Verse-level toc nodes */
-
+  font-size: 12px;
 }
 
 header p { /*Page header*/
