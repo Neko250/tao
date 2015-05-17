@@ -50,6 +50,7 @@ text-align: right;
   font-weight: 400;
 /*  font-size: 40px;*/
 }
+
 header p { /*Page header*/
 
 }
@@ -57,8 +58,6 @@ header p { /*Page header*/
 h1 { /*book number headings*/
   text-align: center;
   font-size: 16px;
-
-  
 }
 
 h2 { /*book title headings */
@@ -82,14 +81,22 @@ p { /*standard paras */
 blockquote {
   line-height: 2em;
   font-style: italic;
-
-
 }
 
 tt {
 
 }
 
+hr { 
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 400px;
+}
 
 .theTao { /*Tao wrapper */
   max-width: 620px;
@@ -99,9 +106,8 @@ tt {
 
 .book { /*book wrapper*/
   padding: 20px;
-  margin: 10px;
+  margin: 10px 10px 50px 10px;
   background: rgba(133, 224, 224, 0.2);
-
 }
 
 .spake { /*"This spake the master programmer:" p class" */
@@ -109,7 +115,6 @@ tt {
 /*  font-style: italic;*/
   font-size: 16px;
   line-height: 5px;
- 
 }
 
 .maxim { /*Verse maxim p class */
