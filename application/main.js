@@ -10,14 +10,12 @@ var tocLevelOne = [
   {book:"Nine", title:"Epilogue",toc:"tocNine", tao: "nine"}
 ];
 
-
 $(document).ready(function () {  
 
-  $('.theTao').hide();
+  $('.book').hide();
   $("#iconPlus").hide();
   $(".startPage").stop().fadeOut(5000, function() {
-    })
-
+  });
 
   $("#iconMinus").on("click", function() {    //Menu collapse on click
     $(".tocWrapper").stop().animate({
@@ -42,8 +40,26 @@ $(document).ready(function () {
     });
   });
 
+  var getPage = function() {
+
+    // $(".startPage").stop().fadeOut(5000, function() {
+    // });
+    // $(".theTao").stop().fadeOut(5000, function(){
+    // });
+    $(".tocLevelOne").on("click", function(){
+      var x = $(this).attr('id');
+      x = x.substring(3);
+      x = x.toLowerCase();
+      $("#" + x).show();
+      console.log(x)
+    });
+  };
+
+getPage();
 
 });
+
+
 
 
 
