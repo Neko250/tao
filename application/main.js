@@ -20,10 +20,10 @@ $(document).ready(function () {
   $("#iconMinus").on("click", function() {    //Menu collapse on click
     $(".tocWrapper").stop().animate({
       width: "10px"
-    }, 200, function() {
-      $("#iconMinus").hide(); 
+    }, 400, function() {
       $(".tocLevelOne").hide();
       $(".toc > hr").hide();
+      $("#iconMinus").hide(); 
       $("#iconPlus").show();   
     });
   });
@@ -42,7 +42,7 @@ $(document).ready(function () {
   $("#iconPlus").on("click", function() {     //Menu expand on click
     $(".tocWrapper").stop().animate({
       width: "280px"
-    }, 200, function() {
+    }, 400, function() {
       $("#iconPlus").hide(); 
       $(".tocLevelOne").show();
       $(".toc > hr").show();
@@ -60,7 +60,7 @@ $(document).ready(function () {
       x = x.substring(3);
       x = x.toLowerCase();
       if (x === "all") {
-        $(".theTao").show();
+        $(".theTao .book").show();
       } else {
         $("#" + x).fadeIn(2000, function() {
         });
