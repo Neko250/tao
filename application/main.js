@@ -16,7 +16,12 @@ $(document).ready(function () {
   $( document ).on( "mousemove", function( event ) {             //Working on a function to have page background dynamically populated with mouse coord
     var x = event.pageX;
     var y = event.pageY;
-    $(".codeFrame").prepend("<span> pageX = " + x + " pageY = " + y + "</span>")})
+    $(".codeFrame").prepend("<span> pageX = " + x + " pageY = " + y + "</span>")
+      if ($(".codeFrame span").length >= 500) {
+      console.log("test")
+      $(".codeFrame span:last").remove()
+    }})
+
 
   $(".book").hide();
   $("#iconPlus").hide();

@@ -67,11 +67,9 @@ text-align: right;
   line-height: 300px;
 }
 
-
 header p { /*Page header*/
     margin-bottom: 20px;
     margin-top: 30px;
-
 }
 
 h1 { /*book number headings*/
@@ -86,10 +84,6 @@ h2 { /*book title headings */
   margin-top: 10px;
 }
 
-h3 { /*verse number headings */
-
-}
-
 p { /*standard paras */
   line-height: 1.5em;
   letter-spacing: 1px;
@@ -99,10 +93,6 @@ p { /*standard paras */
 blockquote {
   line-height: 2em;
   font-style: italic;
-}
-
-tt {
-
 }
 
 hr { 
@@ -131,7 +121,6 @@ hr {
 .theTao { /*Tao wrapper */
   max-width: 620px;
   display: inline-block;
-
 }
 
 .book { /*book wrapper*/
@@ -152,25 +141,20 @@ hr {
   font-size: 22px;
   font-style: italic;
   font-weight: 400;
-
 }
 
 .verse { /*Verse wrapper div */
   margin: 30px 15px 15px 15px;
-
-
 }
 
 .verseNumber {
   font-weight: 700;
   letter-spacing: 2px;
-
 }
 
 .theTao { /*Tao wrapper */
   max-width: 620px;
   display: inline-block;
-
 }
 
 .codeFrame {
@@ -179,7 +163,8 @@ hr {
   height:100vh;
   width: 100vw;
 }
+
 .codeFrame span {
-  opacity: 0.1;
+  opacity: 0.075;
 }
 
