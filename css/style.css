@@ -11,6 +11,7 @@ header {
 }
 
 .container {  /*Wraps all page content*/
+  z-index: 100;
   max-width: 990px;
   margin: 0 auto;
 }
@@ -172,4 +173,13 @@ hr {
 
 }
 
+.codeFrame {
+  z-index: -100;
+  position: absolute;
+  height:100vh;
+  width: 100vw;
+}
+.codeFrame span {
+  opacity: 0.1;
+}
 
