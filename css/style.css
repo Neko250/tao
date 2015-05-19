@@ -29,11 +29,9 @@ text-align: right;
 }
 
 .tocLevelOne { /*Book-level toc nodes */
-  text-align: left;
+  text-align: center;
   font-size: 14px;
 }
-
-
 
 .tocLevelTwo { /*Verse-level toc nodes */
   font-size: 12px;
@@ -70,6 +68,9 @@ text-align: right;
 
 
 header p { /*Page header*/
+    margin-bottom: 20px;
+    margin-top: 30px;
+
 }
 
 h1 { /*book number headings*/

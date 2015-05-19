@@ -13,10 +13,15 @@ var tocLevelOne = [
 
 $(document).ready(function () {  
 
-  $('.book').hide();
-  $("#iconPlus").hide();
-  $(".startPage").stop().fadeOut(5000, function() {
-  });
+// $( document ).on( "mousemove", function( event ) {             //Working on a function to have page background dynamically populated with mouse coord
+//   var x = event.pageX;
+//   var y = event.pageY;
+//   $(".container").append("<span>" + x + y + "</span>")})
+
+//   $(".book").hide();
+//   $("#iconPlus").hide();
+//   $(".startPage").stop().fadeOut(5000, function() {
+//   });
 
   $("#iconMinus").on("click", function() {    //Menu collapse on click
       $(".tocLevelOne").hide();
