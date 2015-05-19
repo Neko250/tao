@@ -1,0 +1,174 @@
+body {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-weight: 300;
+}
+
+.container {  /*Wraps all page content*/
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.tocWrapper {  /*Wraps all toc elements*/
+  width: 290px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  margin: 10px 10px 100% 10px;
+  background: rgba(133, 224, 224, 0.2);
+}
+
+.toc { /*Div wrapping toc <p>s */
+text-align: right;
+}
+
+.tocLevelOne { /*Book-level toc nodes */
+  text-align: left;
+  font-size: 14px;
+}
+
+
+
+.tocLevelTwo { /*Verse-level toc nodes */
+  font-size: 12px;
+}
+
+#icon{
+  text-align: right;
+  width: 100%;
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+}
+
+.tocEmph {
+  font-weight: 400;
+}
+
+.startPage {
+
+  max-width: 620px;
+  display:inline-block;
+  margin: 10px 10px  10px 10px;
+  background: rgba(133, 224, 224, 0.2);
+  height: 400px;
+}
+
+.startPage p {
+  padding: 20px;
+  font-weight: 300;
+  font-size: 26px;
+  text-align: center;
+  font-style: italic;
+  line-height: 300px;
+}
+
+
+header p { /*Page header*/
+}
+
+h1 { /*book number headings*/
+  text-align: center;
+  font-size: 16px;
+}
+
+h2 { /*book title headings */
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+h3 { /*verse number headings */
+
+}
+
+p { /*standard paras */
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+blockquote {
+  line-height: 2em;
+  font-style: italic;
+}
+
+tt {
+
+}
+
+hr { 
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 400px;
+}
+
+.toc hr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 200px;
+}
+
+
+.theTao { /*Tao wrapper */
+  max-width: 620px;
+  display: inline-block;
+
+}
+
+.book { /*book wrapper*/
+  padding: 20px;
+  margin: 10px 10px 50px 10px;
+  background: rgba(133, 224, 224, 0.2);
+}
+
+.spake { /*"This spake the master programmer:" p class" */
+  text-align: center;
+/*  font-style: italic;*/
+  font-size: 16px;
+  line-height: 5px;
+}
+
+.maxim { /*Verse maxim p class */
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+
+}
+
+.verse { /*Verse wrapper div */
+  margin: 30px 15px 15px 15px;
+
+
+}
+
+.verseNumber {
+  font-weight: 700;
+  letter-spacing: 2px;
+
+}
+
+.theTao { /*Tao wrapper */
+  max-width: 620px;
+  display: inline-block;
+
+}
+
+
