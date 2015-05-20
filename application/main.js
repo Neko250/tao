@@ -13,9 +13,32 @@ var tocLevelOne = [
 
 $(document).ready(function () {  
 
-  $('.book').hide();
+// <<<<<<< HEAD
+//   $('.book').hide();
+//   $("#iconPlus").hide();
+//   $(".startPage").stop().fadeOut(5000, function() {
+// =======
+  $( document ).on( "mousemove", function( event ) {            
+    var x = event.pageX;
+    var y = event.pageY;
+    var a = event.clientX;
+    var b = event.clientY
+    $(".codeFrame").prepend("<span> pageX = " + x + " pageY = " + y + "clientX = " + a + "clientY = " + b + "</span>")
+      if ($(".codeFrame span").length >= 1000) {
+      console.log("test")
+      $(".codeFrame span:last").remove()
+    }})
+
+  $("header").hide();
+ 
+  $(".startPage").fadeIn(1000, function() {
+    });
+  $("header").fadeIn(1000, function() {
+  });
+  $(".book").hide();
   $("#iconPlus").hide();
-  $(".startPage").stop().fadeOut(5000, function() {
+  $(".startPage").stop().fadeOut(3000, function() {
+// >>>>>>> mastera
   });
 
   $("#iconMinus").on("click", function() {    //Menu collapse on click

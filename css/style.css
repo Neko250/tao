@@ -11,6 +11,7 @@ header {
 }
 
 .container {  /*Wraps all page content*/
+  z-index: 100;
   max-width: 990px;
   margin: 0 auto;
 }
@@ -21,7 +22,8 @@ header {
   vertical-align: top;
   padding: 20px;
   margin: 10px 10px 100% 10px;
-  background: rgba(133, 224, 224, 0.2);
+  /*background: rgba(133, 224, 224, 0.2);*/
+  background: rgba(204, 153, 0, 0.2);
 }
 
 .toc { /*Div wrapping toc <p>s */
@@ -29,11 +31,9 @@ text-align: right;
 }
 
 .tocLevelOne { /*Book-level toc nodes */
-  text-align: left;
+  text-align: center;
   font-size: 14px;
 }
-
-
 
 .tocLevelTwo { /*Verse-level toc nodes */
   font-size: 12px;
@@ -55,7 +55,7 @@ text-align: right;
   max-width: 620px;
   display:inline-block;
   margin: 10px 10px  10px 10px;
-  background: rgba(133, 224, 224, 0.2);
+  background: rgba(204, 153, 0, 0.2);
   height: 400px;
 }
 
@@ -68,8 +68,9 @@ text-align: right;
   line-height: 300px;
 }
 
-
 header p { /*Page header*/
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 h1 { /*book number headings*/
@@ -84,10 +85,6 @@ h2 { /*book title headings */
   margin-top: 10px;
 }
 
-h3 { /*verse number headings */
-
-}
-
 p { /*standard paras */
   line-height: 1.5em;
   letter-spacing: 1px;
@@ -99,9 +96,6 @@ blockquote {
   font-style: italic;
 }
 
-tt {
-
-}
 
 hr { 
     display: block;
@@ -116,8 +110,8 @@ hr {
 
 .toc hr {
     display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
@@ -129,13 +123,13 @@ hr {
 .theTao { /*Tao wrapper */
   max-width: 620px;
   display: inline-block;
-
 }
 
 .book { /*book wrapper*/
   padding: 20px;
   margin: 10px 10px 50px 10px;
-  background: rgba(133, 224, 224, 0.2);
+
+  background: rgba(204, 153, 0, 0.2);
 }
 
 .spake { /*"This spake the master programmer:" p class" */
@@ -150,25 +144,31 @@ hr {
   font-size: 22px;
   font-style: italic;
   font-weight: 400;
-
 }
 
 .verse { /*Verse wrapper div */
   margin: 30px 15px 15px 15px;
-
-
 }
 
 .verseNumber {
   font-weight: 700;
   letter-spacing: 2px;
-
 }
 
 .theTao { /*Tao wrapper */
   max-width: 620px;
   display: inline-block;
+}
 
+.codeFrame {
+  z-index: -100;
+  position: fixed;
+  height:100vh;
+  width: 100vw;
+}
+
+.codeFrame span {
+  opacity: 0.075;
 }
 
 
