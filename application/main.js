@@ -43,6 +43,7 @@ $(document).ready(function () {
 
   $("#iconMinus").on("click", function() {    //Menu collapse on click
       $(".tocLevelOne").hide();
+      $("#contentsHeader").hide();
       $(".toc > hr").hide();
       $(".tocWrapper").stop().animate({
       width: "10px"
@@ -69,6 +70,7 @@ $(document).ready(function () {
     }, 400, function() {
       $("#iconPlus").hide(); 
       $(".tocLevelOne").show();
+      $("#contentsHeader").show();
       $(".toc > hr").show();
       $("#iconMinus").show();   
     });
