@@ -20,8 +20,8 @@ header {
   width: 290px;
   display: inline-block;
   vertical-align: top;
-  padding: 20px;
-  margin: 10px 10px 100% 10px;
+  padding: 0px 20px 20px 20px;
+  margin: 0px 10px 100% 10px;
   background: rgba(204, 153, 0, 0.2);
 }
 
@@ -158,6 +158,7 @@ hr {
 }
 
 .codeFrame {
+  margin-top: -30px;
   z-index: -100;
   position: fixed;
   height:100vh;
@@ -167,4 +168,18 @@ hr {
 .codeFrame span {
   opacity: 0.075;
 }
+
+
+.tocLevelOne {
+  cursor: default;
+}
+
+#contentsHeader {
+  position: relative;
+  top: 35px;
+  text-align: center;
+  margin: 0px;
+}
+
+
 
