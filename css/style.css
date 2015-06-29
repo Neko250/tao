@@ -125,7 +125,7 @@ hr {
 
 .book { /*book wrapper*/
   padding: 20px;
-  margin: 10px 10px 50px 10px;
+  margin: 0px 10px 50px 10px;
   background: rgba(204, 153, 0, 0.2);
 }
 

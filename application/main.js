@@ -18,9 +18,10 @@ $(document).ready(function () {
     var y = event.pageY;
     var a = event.clientX;
     var b = event.clientY
+    console.log("Woooo, look at those numbers go!")
     $(".codeFrame").prepend("<span> pageX = " + x + " pageY = " + y + "clientX = " + a + "clientY = " + b + "</span>")
       if ($(".codeFrame span").length >= 1000) {
-      console.log("test")
+
       $(".codeFrame span:last").remove()
     }})
 
@@ -72,7 +73,6 @@ $(document).ready(function () {
 
   var randomTaoGenerator = function() {
     randomNumber = Math.random() * 10;
-    console.log(randomNumber)
     if (randomNumber <= 2) {
       randomTao = "one"
     } else if ((randomNumber > 2) && (randomNumber <=3)) {
