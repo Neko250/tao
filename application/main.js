@@ -117,7 +117,11 @@ $(document).ready(function () {
         randomTaoGenerator()
         $("#" + randomTao).fadeIn(2000, function() {
         });
-    
+
+      } else if (x === "uttao") {
+        console.log(x)
+        $("#about").fadeIn(2000, function() {
+        });
       } else {
         $("#" + x).fadeIn(2000, function() {
         console.log(x)
