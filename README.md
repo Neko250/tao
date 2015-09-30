@@ -1,4 +1,4 @@
-http://cjbarnaby.github.io/Tao
+http://cjbarnaby.com.au/Tao
 
 ## The Tao of Programming
 
