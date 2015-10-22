@@ -11,22 +11,22 @@ var tocLevelOne = [
 ];
 
 
-$(document).ready(function () {  
+$(document).ready(function () {
 
-  $( document ).on( "mousemove", function( event ) {            
+  $( document ).on( "mousemove", function( event ) {
     var x = event.pageX;
     var y = event.pageY;
     var a = event.clientX;
-    var b = event.clientY
-    console.log("Woooo, look at those numbers go!")
-    $(".codeFrame").prepend("<span> pageX = " + x + " pageY = " + y + "clientX = " + a + "clientY = " + b + "</span>")
+    var b = event.clientY;
+    console.log("Woooo, look at those numbers go!");
+    $(".codeFrame").prepend("<span> pageX = " + x + " pageY = " + y + "clientX = " + a + "clientY = " + b + "</span>");
       if ($(".codeFrame span").length >= 1000) {
 
-      $(".codeFrame span:last").remove()
-    }})
+      $(".codeFrame span:last").remove();
+    }});
 
   $("header").hide();
- 
+
   $(".startPage").fadeIn(1000, function() {
     });
   $("header").fadeIn(1000, function() {
@@ -44,8 +44,8 @@ $(document).ready(function () {
       width: "10px"
     }, 400, function() {
 
-      $("#iconMinus").hide(); 
-      $("#iconPlus").show();   
+      $("#iconMinus").hide();
+      $("#iconPlus").show();
     });
   });
 
@@ -63,34 +63,34 @@ $(document).ready(function () {
     $(".tocWrapper").stop().animate({
       width: "280px"
     }, 400, function() {
-      $("#iconPlus").hide(); 
+      $("#iconPlus").hide();
       $(".tocLevelOne").show();
       $("#contentsHeader").show();
       $(".toc > hr").show();
-      $("#iconMinus").show();   
+      $("#iconMinus").show();
     });
   });
 
   var randomTaoGenerator = function() {
     randomNumber = Math.random() * 10;
     if (randomNumber <= 2) {
-      randomTao = "one"
+      randomTao = "one";
     } else if ((randomNumber > 2) && (randomNumber <=3)) {
-      randomTao = "two"
+      randomTao = "two";
     } else if ((randomNumber > 3) && (randomNumber <=4)) {
-      randomTao = "three"
+      randomTao = "three";
     } else if ((randomNumber > 4) && (randomNumber <=5)) {
-      randomTao = "four"
+      randomTao = "four";
     } else if ((randomNumber > 5) && (randomNumber <=6)) {
-      randomTao = "five"
+      randomTao = "five";
     } else if ((randomNumber > 6) && (randomNumber <=7)) {
-      randomTao = "six"
+      randomTao = "six";
     } else if ((randomNumber > 7) && (randomNumber <=8)) {
-      randomTao = "seven"
+      randomTao = "seven";
     } else if ((randomNumber > 8) && (randomNumber <=9)) {
-      randomTao = "six"
+      randomTao = "six";
     } else if ((randomNumber > 9) && (randomNumber <=10)) {
-      randomTao = "six"
+      randomTao = "six";
     } return randomTao;
   };
 
@@ -103,22 +103,22 @@ $(document).ready(function () {
       var x = $(this).attr('id');
       x = x.substring(3);
       x = x.toLowerCase();
-      console.log(x)
+      console.log(x);
       if (x === "all") {
         $(".theTao .book").fadeIn(2000, function() {
         });
       } else if (x === "randomtao") {
-        randomTaoGenerator()
+        randomTaoGenerator();
         $("#" + randomTao).fadeIn(2000, function() {
         });
 
       } else if (x === "uttao") {
-        console.log(x)
+        console.log(x);
         $("#about").fadeIn(2000, function() {
         });
       } else {
         $("#" + x).fadeIn(2000, function() {
-        console.log(x)
+        console.log(x);
         });
       }
     });
@@ -127,8 +127,3 @@ $(document).ready(function () {
 getPage();
 
 });
-
-
-
-
-
